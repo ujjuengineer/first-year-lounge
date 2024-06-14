@@ -1,0 +1,270 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f0f0f0;
+    color: #333; /* Default text color */
+}
+
+header {
+    background-color: #333; /* Dark background for header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    padding: 10px 15px; /* Add padding to make navigation items more clickable */
+    border-radius: 5px; /* Rounded corners for navigation items */
+    background-color: #555; /* Darker background for navigation items */
+}
+
+header nav ul li a:hover {
+    background-color: #ffc107; /* Yellow background on hover */
+    color: #333; /* Darker text on hover */
+}
+
+/* Home Section */
+.home-section {
+    background-image: url('home-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(65, 79, 106);
+    padding: 100px 0;
+}
+
+.home-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.home-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* About and Services Section */
+.about-services-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 100px 0;
+}
+
+.about-services-section .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+}
+
+.about-section,
+.services-section {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+    background-color: #3498db; /* Blue background for About Us section */
+    color: #fff; /* White text color */
+}
+
+.services-section {
+    background-color: #e67e22; /* Orange background for Services section */
+    color: #fff; /* White text color */
+}
+
+.about-section h2,
+.services-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff; /* White text color */
+}
+
+.about-section p,
+.services-section p {
+    font-size: 18px;
+    color: #fff; /* White text color */
+    max-width: 100%; /* Adjust max-width as needed */
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 0;
+    background: #333; /* Dark background for projects section */
+    text-align: center;
+    color: #fff; /* White text color */
+}
+
+.projects-section .container {
+    width: 80%;
+    margin: auto;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: calc(33.33% - 20px); /* Adjust width for three items in a row */
+    margin: 10px;
+    text-align: left; /* Adjust alignment as needed */
+    padding: 20px;
+    background-color: #444; /* Slightly lighter background for projects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffc107; /* Yellow text color */
+}
+
+.project p {
+    font-size: 16px;
+    color: #ccc; /* Lighter text color */
+}
+
+/* Footer Section */
+footer {
+    background-color: #3498db; /* Blue background for footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 50px 0; /* Increased padding for footer */
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px; /* Padding for better spacing */
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-image {
+    flex: 1;
+    text-align: right;
+}
+
+.contact-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-container img {
+        width: 120px; /* Adjust logo size for smaller screens */
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .about-services-section {
+        flex-direction: column; /* Stack about and services sections on smaller screens */
+        padding: 50px 0;
+    }
+
+    .about-section,
+    .services-section {
+        max-width: 100%; /* Full width on smaller screens */
+        padding: 20px; /* Adjust padding for better spacing */
+        text-align: center;
+    }
+
+    .projects-section .container {
+        width: 100%; /* Full width container for projects */
+    }
+
+    .project {
+        width: calc(50% - 20px); /* Adjust width for two items in a row */
+    }
+}
