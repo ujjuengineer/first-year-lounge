@@ -6,6 +6,12 @@
 }
 
 /* Basic styling */
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    background-color: gray;
+}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
