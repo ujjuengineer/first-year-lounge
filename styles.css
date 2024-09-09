@@ -1,3 +1,39 @@
+/* Contact Section */
+#contact-section {
+    margin-top: 50px;
+    margin: 3%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #004d99;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+
+
 /* Resetting default browser styles */
 * {
     margin: 0;
@@ -327,4 +363,8 @@ footer .container {
     .info-section .container {
         width: 100%; /* Full width container for information sections */
     }
+
+        
+
+    
 }

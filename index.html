@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MMMUT Gorakhpur</title>
     <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "BmJ9LTG8Q8wjufAxd",
+        });
+    })();
+    </script>
 </head>
 <body>
     <header style="background-image: url('images/mmmut-img4.jpg');">
@@ -15,7 +26,7 @@
             <nav>
                 <ul>
                     <!-- <li><a href="#home">Home</a></li> -->
-                    <li><a href="#about">Glimpses</a></li>     
+                    
                     <li><a href="#projects">Academics</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -71,18 +82,21 @@
     <section id="services" class="services-section">
         <div class="container">
             <h2>Important Links</h2>
-            <div>
+            <div style="display: flex; justify-content: center;">
                  <br>
-                 <li>
-                    <a target="_blank" href="https://www.instagram.com/first_year_lounge_mmmut?igsh=MXhub2NpczYxcm80dA==">Follow First Year Lounge</a>
-                 </li>
-                <li><a target="_blank" href="http://www.mmmut.ac.in/">MMMUT OFFICIAL WEBSITE</a></li>
-                <li><a target="_blank" href="https://mmmut.admissions.nic.in">MMMUT ADMISSION PORTAL</a></li>
-                <li><a target="_blank" href="https://ngl.link/first_year_lounge_mmmut">NGL</a></li>
-                <li><a target="_blank" href="https://www.instagram.com/cdc.mmmut?igsh=MTJmcGhybXhqbG9pbg==">Coders dev club</a></li>
-                <li><a target="_blank" href="https://www.instagram.com/robotics_club_mmmut?igsh=MTdlOXltd3E0dmM4cQ==">Robotics Club</a></li>
-                <li><a target="_blank" href="https://www.instagram.com/drone_iot_club.mmmut?igsh=YjZ6ZWM5N201bzd0">Drone & IOT Club</a></li>
+                 <table class="table" style="text-align: left;"> 
+                    <tr><td ><a style="color: antiquewhite;" target="_blank" href="https://www.instagram.com/first_year_lounge_mmmut?igsh=MXhub2NpczYxcm80dA==">> Follow First Year Lounge</a></td></tr>
+                    <tr><td><a style="color: antiquewhite;" target="_blank" href="http://www.mmmut.ac.in/">> MMMUT OFFICIAL WEBSITE</a></td></tr>
+                    <tr><td><a style="color: antiquewhite;" target="_blank" href="https://mmmut.admissions.nic.in">> MMMUT ADMISSION PORTAL</a></td></tr>
+                    <tr><td><a style="color: antiquewhite;" target="_blank" href="https://ngl.link/first_year_lounge_mmmut">> NGL</a></td></tr>
+                    <tr><td><a style="color: antiquewhite;" target="_blank" href="https://www.instagram.com/cdc.mmmut?igsh=MTJmcGhybXhqbG9pbg==">> Coders dev club</a></td></tr>
+                    <tr><td><a style="color: antiquewhite;" target="_blank" href="https://www.instagram.com/robotics_club_mmmut?igsh=MTdlOXltd3E0dmM4cQ==">> Robotics Club</a></td></tr>
+                    <tr><td><a style="color: antiquewhite;" target="_blank" href="https://www.instagram.com/drone_iot_club.mmmut?igsh=YjZ6ZWM5N201bzd0">> Drone & IOT Club</a></td></tr>
+                 </table>
+                 
+                 
             </div>
+            <p style="color: black;"><b>NOTE: Siddhi Mishra hosts the Insta handle.</b></p>
             <img src="images/coding.jpg" width="40%" alt="Services Image">
             <img src="images/drone.jpg" width="40%" alt="Services Image">
         </div>
@@ -117,10 +131,32 @@
         </div>
     </section> -->
 
+
+
+    <!--contact us-->
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit" onclick="sendMail() ">Submit</button>
+        </form>
+    </section>
+
+
     <footer>
         <div id="contact" class="container contact-section">
             <div class="contact-info">
-                <u><h2>Contact Us</h2></u>
+                <u><h2>Follow Us</h2></u>
                 <!-- <p>Developer : Ujjwal Kumar - IT - 1st year </p>
                 <p>Team Member : Anurag Mishra-IT-1st year</p>
                 <p>Address: Khagaul lakh, patna, 801105</p> -->
@@ -164,5 +200,8 @@
             </div> -->
         </div>
     </footer>
+
+
+    <script src="scripts.js"></script>
 </body>
 </html>
