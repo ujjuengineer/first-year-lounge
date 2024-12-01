@@ -18,7 +18,11 @@
     </script>
 </head>
 <body>
-    <header style="background-image: url('images/mmmut-img4.jpg');">
+    <!-- Main header with an image -->
+    <!-- <div class="header"></div> -->
+
+    <header class="header" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                 url('images/mmmut-img4.jpg') no-repeat center center / cover;">
         <div class="header-content" style="display: flexbox;">
             <!-- <div class="logo-container">
                 <img src="images/original logo.png" width="100px" alt="Ujjwal Infratech Logo">
@@ -34,11 +38,27 @@
         </div>
     </header>
 
-    <section id="home" class="home-section">
-        <h2 style="color:chocolate" >Welcome to <dir style="color: crimson;">MMMUT gorakhpur, First Year Lounge</dir> </h2>
-        <p style="color: black;"> Here you can access all the essentials regarding your academics and non academics subjects.</p>
-        <img src="https://lh5.googleusercontent.com/proxy/jdEzqZi94w-Vz8F5-rZchDvxLKZRywVzxIryI2wSrKmCqVvN_LMnKaTbBfG_UURTf2LsCvMwmg1KsYPIqiyk027FlKK7qg" width="50%" alt="Home Image">
-        <p style="color: black;">First Year Lounge is an extremely student oriented website that encompasses passionate and perfect delivery to inject a sense of satisfaction to the first year students who are associated with it.</p>
+
+    <!-- Navigation bar (initially hidden) -->
+    <div class="navbar wave-text">
+        WELCOME ❤️ 
+    </div>
+
+    
+
+
+    <section id="home" class="home-section" style="background-image: url(https://static.videezy.com/system/resources/previews/000/043/469/original/01__2824_29.mp4);">
+        <h2 style="color:rgb(210, 105, 30); background-color: rgb(0, 0, 0); " >Welcome to <dir style="color: rgb(220, 20, 60);">MMMUT gorakhpur, First Year Lounge</dir> </h2>
+        
+        <p class="zoom-paragraph" style="color: wheat; background-color: rgba(0, 0, 0, 0.524); border-radius: 7px;" > 
+            Starting college is an exciting yet challenging phase, and this platform is here to make your transition to MMMUT Gorakhpur as smooth as possible. Designed specifically for first-year students, this website is a one-stop solution to help you navigate your new journey in college. Here, you’ll find a wide range of essential resources that are crucial for your academic and personal growth. Access important class notes, recommended books, and an up-to-date class timetable to stay organized and on top of your studies. Stay informed about key events and updates happening across the campus, ensuring you never miss out on any opportunities to learn, connect, and grow.
+        </p>
+        
+        <img src="https://lh5.googleusercontent.com/proxy/jdEzqZi94w-Vz8F5-rZchDvxLKZRywVzxIryI2wSrKmCqVvN_LMnKaTbBfG_UURTf2LsCvMwmg1KsYPIqiyk027FlKK7qg" width="80%" alt="Home Image">
+        
+        <p class="zoom-paragraph" style="color: wheat; background-color: rgba(0, 0, 0, 0.524); border-radius: 7px;">
+            This platform also serves as a guide to familiarize you with the college, its culture, and everything you need to know to settle in quickly. Whether it’s preparing for classes, exploring extracurricular activities, or understanding the college's functioning, this website is designed to empower you with the tools and information you need to succeed.
+        </p>
     </section>
 
     <section id="about" class="about-section">
@@ -46,11 +66,20 @@
             <h2>Glimpses of MMMUT Gorakhpur</h2>
             
             <div style="display: flexbox; ">
-                <img src="images/mmmut-image1.jpg" alt="">  
-                <img src="images/mmmut-img2.jpg" alt="">  
-                <img src="images/mmmut-img3.jpg" alt="">
-                <img src="images/mmmut-img4.jpg" alt="">
+                <div style="display: inline-block;">
+                    <img src="images/mmmut-image1.jpg" alt="">  
+                </div>
+                <div style="display: inline-block;">
+                    <img src="images/mmmut-img2.jpg" alt="">  
+                </div>
+                <div style="display: inline-block;">
+                    <img src="images/mmmut-img3.jpg" alt="">
+                </div>
+                <div style="display: inline-block;">
+                    <img src="images/mmmut-img4.jpg" alt="">
+                </div>
             </div>
+        
         </div>
     </section>
 
@@ -61,19 +90,21 @@
             <h2>E-Academics</h2>
             <div class="project-row">
                 <div class="project">
-                    <a href="https://mmmut-page.github.io/books-and-notes/"><img src="images/book-images.jpg" alt="Project 1 Image"></a>
-                    <a href="https://mmmut-page.github.io/books-and-notes/"><h3>Books and notes pdf</h3></a>
+
+                    <a href="https://mmmut-page.github.io/books-and-notes/" class="link-container"><img src="images/book-images.jpg" alt="Project 1 Image"></a>
+
+                    <a href="https://mmmut-page.github.io/books-and-notes/" ><h3>Books and notes pdf</h3></a>
+
                     <!-- <p>click above to get the premium pdf and notes of subject's Hod.</p> -->
                 </div>
                 <div class="project">
-                    <a href="https://ujjuengineer.github.io/IT-TimeTable/"><img src="images/time-table.jpg" alt="Project 2 Image"></a>
+                    <a href="https://ujjuengineer.github.io/IT-TimeTable/" class="link-container"><img src="images/time-table.jpg" alt="Project 2 Image"></a>
                     <a href="https://ujjuengineer.github.io/IT-TimeTable/"><h3>Time table and syllabus</h3></a>
                     <p></p>
                 </div>
                 <div class="project">
-                    <a target="_blank" href="https://mmmut-page.github.io/notification-page/"><img src="images/events.jpg" alt="Project 3 Image"></a>
-                    <a href="https://mmmut-page.github.io/notification-page/"><h3>Important Event Updates</h3></a>
-                    
+                    <a target="_blank" href="http://www.mmmut.ac.in/AllNews" class="link-container"><img src="images/events.jpg" alt="Project 3 Image"></a>
+                    <a href="http://www.mmmut.ac.in/AllNews" ><h3>Important Event Updates</h3></a>      
                 </div>
             </div>
         </div>
@@ -96,48 +127,17 @@
                  
                  
             </div>
-            <p style="color: black;"><b>NOTE: Siddhi Mishra hosts the Insta handle.</b></p>
+            <!-- <p style="color: black;"><b>NOTE: Siddhi Mishra hosts the Insta handle.</b></p> -->
             <img src="images/coding.jpg" width="40%" alt="Services Image">
             <img src="images/drone.jpg" width="40%" alt="Services Image">
         </div>
     </section>
 
-    <!-- <section id="how-it-works" class="info-section">
-        <div class="container">
-            <h2>Lorem, ipsum dolor.</h2>
-            <img src="how-it-works.jpg" alt="How It Works Image">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, totam.</p>
-        </div>
-    </section> -->
-
-    <!-- <section id="evaluate-property" class="info-section">
-        <div class="container">
-            <h2>Head Developer</h2>
-            <img width="25%" src="images/ujjwal-image.jpg" alt="Evaluate Property Image">
-        </div>
-    </section>
-
-    <section id="meet-our-agent" class="info-section">
-        <div class="container">
-            <h2>Junior Developer</h2>
-            <img width="25%" src="images/ujjwal-image.jpg" alt="Evaluate Property Image">
-        </div>
-    </section>
-
-    <section id="close-the-deal" class="info-section">
-        <div class="container">
-            <h2>Head Developer</h2>
-            <img width="25%" src="images/ujjwal-image.jpg" alt="Evaluate Property Image">
-        </div>
-    </section> -->
-
-
-
-    <!--contact us-->
+     
 
     <!-- Contact Section -->
     <section id="contact-section">
-        <h2>Contact Us</h2>
+        <h2>Contact Me</h2>
         <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
@@ -156,52 +156,15 @@
     <footer>
         <div id="contact" class="container contact-section">
             <div class="contact-info">
-                <u><h2>Follow Us</h2></u>
-                <!-- <p>Developer : Ujjwal Kumar - IT - 1st year </p>
-                <p>Team Member : Anurag Mishra-IT-1st year</p>
-                <p>Address: Khagaul lakh, patna, 801105</p> -->
-                <table>
-                    <tr>
-                        <td style="color: black;">Developer : </td>
-                        <td>&nbsp;Ujjwal Kumar</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><a target="_blank" href="https://www.linkedin.com/in/ujjuengineer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> : LINKEDIN</a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><a target="_blank" href="https://www.instagram.com/ujjwal.sharma3861/"> : INSTA</a></td>
-                    </tr>
-                    <!-- <tr>
-                        <td style="color: black;">Team Mem </td>
-                        <td>Ganesh Pathak</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><a target="_blank" href="https://www.linkedin.com/in/ganesh-pathak-43065a286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">: LINKEDIN</a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Ganesh Pathak</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><a target="_blank" href="https://www.linkedin.com/in/ganesh-pathak-43065a286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">: LINKEDIN</a></td>
-                    </tr>
-                    <tr>
-                        <td style="color: black;">Manager </td>
-                        <td> Siddhi Mishra</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><a target="_blank" href="https://www.linkedin.com/in/siddhi-mishra-06761a20b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> : LINKEDIN</a></td>
-                    </tr> -->
-                </table>
+                <u><h2>Follow Me</h2></u>
+                <p>Developer : Ujjwal Kumar - IT</p>
+                <p>Linkedin : <a target="_blank" href="https://www.linkedin.com/in/ujjuengineer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> : ClickMe</a></p>
+                
+                
             </div>
-            <!-- <div class="contact-image">
-                <img src="images/original logo.png" width="200px" alt="Contact Image">
-            </div> -->
+            <div class="contact-image">
+                <img src="images/image2.jpg" width="200px" alt="Contact Image">
+            </div>
         </div>
     </footer>
 

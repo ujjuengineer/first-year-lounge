@@ -101,7 +101,60 @@ header nav ul li a:hover {
     color: #333; /* Darker text on hover */
 }
 
+.header {
+    width: 100%;
+    height: 400px; /* Adjust based on your image size */
+    background-image: url('images/mmmut-img4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Navigation bar, initially hidden */
+.navbar {
+    background-color: #0200007c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: -60px; /* Initially hide it above the viewport */
+    left: 0;
+    transition: top 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar.sticky {
+    top: 0; /* Stick it to the top of the page */
+}
+
+
+
 /* Home Section */
+
+.zoom-text {
+    font-size: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+    transform-origin: center center; /* Zoom around the center of each word */
+}
+
+/* Color change and zoom effect for the hovered word */
+.zoomed {
+    transform: scale(1.2); /* Slight zoom effect on hovered word */
+    color: #fbff00; /* Change color when hovered */
+    background-color: rgba(6, 6, 4, 0.633);
+    border-radius: 7px;
+}
+
+/* Color change and zoom effect for the neighboring words */
+.adjacent {
+    transform: scale(1.1); /* Slight zoom effect on neighbors */
+    color: #95a5a6; /* Lighter color for neighbors */
+}
+
 .home-section {
     background-image: url('home-background.jpg');
     background-size: cover;
@@ -119,12 +172,12 @@ header nav ul li a:hover {
 .home-section img {
     max-width: 100%;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgb(1, 1, 248);
 }
 
 .home-section p {
     font-size: 18px;
-    max-width: 600px;
+    max-width: 80%;
     margin: auto;
     line-height: 1.6;
 }
@@ -132,8 +185,10 @@ header nav ul li a:hover {
 /* About Section */
 .about-section {
     padding: 100px 0;
-    background-color: #3498db; /* Blue background for About Us section */
-    color: #fff; /* White text color */
+    /* background-color: #3498db;  */
+    background-image: url(https://static.videezy.com/system/resources/previews/000/043/469/original/01__2824_29.mp4);
+    /* background-image: url(https://static.videezy.com/system/resources/previews/000/043/943/original/200214-BWBrush02.mp4); */
+    color: #fff; 
     text-align: center;
 }
 
@@ -142,7 +197,7 @@ header nav ul li a:hover {
     margin: auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.799);
 }
 
 .about-section h2 {
@@ -160,14 +215,55 @@ header nav ul li a:hover {
 .about-section img {
     max-width: 100%;
     border-radius: 8px;
-    margin-top: 20px; /* Add margin-top to separate the text and image */
+    margin-top: 20px; 
 }
+
+
+/* spinning effect 😎 */
+
+.link-container {
+    perspective: 1000px; 
+  }
+
+  /* Image styles */
+  .link-container img {
+    transition: transform 0.5s ease; 
+    transform-style: preserve-3d; 
+  }
+
+  /* Hover Effect */
+  .link-container:hover img {
+    animation: coin-spin 2s ease-in-out; 
+  }
+
+  /* Keyframes for coin-like spinning */
+  @keyframes coin-spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    25% {
+      transform: rotateY(90deg); 
+    }
+    50% {
+      transform: rotateY(180deg); 
+    }
+    75% {
+      transform: rotateY(270deg); 
+    }
+    100% {
+      transform: rotateY(1080deg); 
+    }
+  }
+
+
 
 /* Services Section */
 .services-section {
     padding: 100px 0;
-    background-color: #e67e22; /* Orange background for Services section */
-    color: #fff; /* White text color */
+    /* background-color: #e67e22; Orange background for Services section */
+    background-image: url(https://static.videezy.com/system/resources/previews/000/043/469/original/01__2824_29.mp4);
+    
+    color: #ffffff; 
     text-align: center;
 }
 
@@ -176,7 +272,7 @@ header nav ul li a:hover {
     margin: auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
 }
 
 .services-section h2 {
@@ -194,15 +290,16 @@ header nav ul li a:hover {
 .services-section img {
     max-width: 100%;
     border-radius: 8px;
-    margin-top: 20px; /* Add margin-top to separate the text and image */
+    margin-top: 20px; 
 }
 
 /* Projects Section */
 .projects-section {
     padding: 50px 0;
-    background: #333; /* Dark background for projects section */
+    /* background: #333; */
+    background-image: url(https://static.videezy.com/system/resources/previews/000/043/469/original/01__2824_29.mp4);
     text-align: center;
-    color: #fff; /* White text color */
+    color: #fff; 
 }
 
 .projects-section .container {
@@ -217,11 +314,11 @@ header nav ul li a:hover {
 }
 
 .project {
-    width: calc(33.33% - 20px); /* Adjust width for three items in a row */
+    width: calc(33.33% - 20px); 
     margin: 10px;
-    text-align: left; /* Adjust alignment as needed */
+    text-align: left; 
     padding: 20px;
-    background-color: #444; /* Slightly lighter background for projects */
+    background-color: #444; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -235,48 +332,15 @@ header nav ul li a:hover {
 .project h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #ffc107; /* Yellow text color */
+    color: #ffc107; 
 }
 
 .project p {
     font-size: 16px;
-    color: #ccc; /* Lighter text color */
+    color: #ccc; 
 }
 
-/* Information Sections */
-.info-section {
-    padding: 50px 0;
-    background-color: #fff; /* White background for information sections */
-    text-align: center;
-    color: #333; /* Default text color */
-}
 
-.info-section .container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background-color: #f9f9f9; /* Light background for container */
-}
-
-.info-section img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.info-section h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.info-section p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: auto;
-}
 
 /* Footer Section */
 footer {
@@ -329,7 +393,7 @@ footer .container {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .logo-container img {
-        width: 120px; /* Adjust logo size for smaller screens */
+        width: 120px;
     }
 
     .logo {
@@ -341,30 +405,28 @@ footer .container {
     }
 
     .about-services-section {
-        flex-direction: column; /* Stack about and services sections on smaller screens */
+        flex-direction: column; 
         padding: 50px 0;
     }
 
     .about-section,
     .services-section {
-        max-width: 100%; /* Full width on smaller screens */
-        padding: 20px; /* Adjust padding for better spacing */
+        max-width: 100%; 
+        padding: 20px;
         text-align: center;
     }
 
     .projects-section .container {
-        width: 100%; /* Full width container for projects */
+        width: 100%;
     }
 
     .project {
-        width: calc(50% - 20px); /* Adjust width for two items in a row */
+        width: calc(50% - 20px); 
     }
 
     .info-section .container {
-        width: 100%; /* Full width container for information sections */
+        width: 100%; 
     }
-
-        
 
     
 }
