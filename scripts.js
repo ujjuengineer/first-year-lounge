@@ -57,7 +57,7 @@ zoomTextElements.forEach((element, index) => {
         }
     });
 
-    // Reset the zoom and color change when the mouse leaves the text
+    // Reseting the zoom and color change 
     element.addEventListener('mouseleave', () => {
         zoomTextElements.forEach(el => {
             el.classList.remove("zoomed", "adjacent");
