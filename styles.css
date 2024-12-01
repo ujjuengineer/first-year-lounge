@@ -51,8 +51,15 @@ a:hover{
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #f0f0f0;
     color: #333; 
+    margin: 0; 
+    height: 100vh; 
+    background-image: url('images/backgroundImage.jpg'); 
+    
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
 }
 
 header {
@@ -156,7 +163,6 @@ header nav ul li a:hover {
 }
 
 .home-section {
-    background-image: url('home-background.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -186,7 +192,6 @@ header nav ul li a:hover {
 .about-section {
     padding: 100px 0;
     /* background-color: #3498db;  */
-    background-image: url(images/backgroundImage.jpg);
     /* background-image: url(https://static.videezy.com/system/resources/previews/000/043/943/original/200214-BWBrush02.mp4); */
     color: #fff; 
     text-align: center;
@@ -261,7 +266,7 @@ header nav ul li a:hover {
 .services-section {
     padding: 100px 0;
     /* background-color: #e67e22; Orange background for Services section */
-    background-image: url(images/backgroundImage.jpg);
+    /* background-image: url(images/backgroundImage.jpg); */
     
     color: #ffffff; 
     text-align: center;
@@ -297,7 +302,7 @@ header nav ul li a:hover {
 .projects-section {
     padding: 50px 0;
     /* background: #333; */
-    background-image: url(images/backgroundImage.jpg);
+    /* background-image: url(images/backgroundImage.jpg); */
     text-align: center;
     color: #fff; 
 }
@@ -340,6 +345,9 @@ header nav ul li a:hover {
     color: #ccc; 
 }
 
+#contact-form{
+    color: white;
+}
 
 
 /* Footer Section */
@@ -357,6 +365,7 @@ footer .container {
 }
 
 .contact-section {
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
